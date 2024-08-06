@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" style="--titleBoxX: 66.49717514124293%; --titleBoxY: 0.7777777777777778%;"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Not L Industries</title>
+<link rel="stylesheet" href="Not%20L%20Industries_files/style.css"></head>
+<body>
+    <!-- Title --> 
+    <div id="titleBox">
+        <h1 class="titleText">Welcome to</h1>
+        <h1 class="titleText">Not Loading Industries!</h1>
+        <h2 class="titleSubText">A place to create, develop and innovate</h2>
+
+        <div id="mainServices">
+            <div id="programming" class="mainServicesClass">
+                <h2>Application and Web development</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+elit. Ducimus dolorum sit reiciendis exercitationem vel alias odio 
+corporis? Consectetur vero nam quia, temporibus laboriosam quae esse 
+perferendis autem! Doloremque, aspernatur itaque?</p>
+                <a href="">
+                    <button>Learn More ...</button>
+                </a>
+                <br>
+    
+            </div>
+            <div id="robotics" class="mainServicesClass">
+                <h2>Robotics</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+elit. Ducimus dolorum sit reiciendis exercitationem vel alias odio 
+corporis? Consectetur vero nam quia, temporibus laboriosam quae esse 
+perferendis autem! Doloremque, aspernatur itaque?</p>
+                <a href="">
+                    <button>Learn More ...</button>
+                </a>
+                <br>
+    
+            </div>
+            <div id="cadModeling" class="mainServicesClass">
+                <h2>CAD modeling and 3d printing</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+elit. Ducimus dolorum sit reiciendis exercitationem vel alias odio 
+corporis? Consectetur vero nam quia, temporibus laboriosam quae esse 
+perferendis autem! Doloremque, aspernatur itaque?</p>
+                <a href="">
+                    <button>Learn More ...</button>
+                </a>
+                <br>
+    
+            </div>
+        </div>
+        <br>
+    </div>
+    <!-- Services -->
+    
+    <!-- About Me -->
+    <div id="aboutMe">
+        <h1>About Me</h1>
+        <h2>
+            Info Text .....
+        </h2>
+        <br>
+        <h2>At the moment i'm ....</h2>
+    </div>
+    <!-- Projects -->
+    <div id="projects">
+        <h1>projects ...</h1>
+        <h2>
+            Info Text .....
+        </h2>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div id="topFooter">
+            <!-- Category 1 (Company Logo & Slogan)-->
+            <div id="footer1" class="footerGroups">
+                <div id="companyLogo"></div>
+                <br>
+                <p>Company Slogan</p>
+            </div>
+            <!-- Category 2 (Relevant Pages)-->
+            <div id="footer2" class="footerGroups">
+                <a href=""><button>Example Page1</button></a>
+                <a href=""><button>Example Page2</button></a>
+                <a href=""><button>Example Page3</button></a>
+                <a href=""><button>Example Page4</button></a>
+                <a href=""><button>Example Page5</button></a>
+                <a href=""><button>Example Page6</button></a>
+                <a href=""><button>Example Page7</button></a>
+                <a href=""><button>Example Page8</button></a>
+            </div>
+            <!-- Category 3 (Get in Touch)-->
+            <div id="footer3" class="footerGroups">
+                <h2>Don't hesitate to contact me</h2>
+                <h3>(if it may be concering a project that you have in ming or a different matter)</h3>
+                <div id="socials">
+                    <button><a href="">Portfolio</a></button>
+                    <button><a href="">Linkedin</a></button>
+                    <button><a href="">Discord</a></button>
+                </div>
+            </div>
+        </div>
+        <div id="bottomFooter">
+            <p>Copyright 2024</p>
+        </div>
+    </footer>
+
+    <script src="Not%20L%20Industries_files/app.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
