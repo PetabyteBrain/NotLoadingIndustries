@@ -15,6 +15,7 @@ titleBox.onmousemove = function(e) {
 
     document.documentElement.style.setProperty('--titleBoxX', `${xPercent}%`);
     document.documentElement.style.setProperty('--titleBoxY', `${yPercent}%`);
+
 }
 
 programming.onmousemove = function(e) { 
