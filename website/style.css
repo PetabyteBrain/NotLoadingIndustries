@@ -1,9 +1,7 @@
 :root{
     --titleBoxX: 50%;
     --titleBoxY: 50%;
-
-    --cadModelingX: 50%;
-    --cadModelingY: 50%;
+    
 }
 /*
 @media only screen 
@@ -13,9 +11,70 @@ and (max-device-width : 4800px) {
 */
 
 body{
+    width: 100%;
+    margin: 0px;
     background-color: rgb(0, 0, 0); /* Temporary */
     color: aliceblue; /* Temporary */
 }
+/* Header */
+header{
+    position:fixed;
+    width: 100%;
+    height: auto;
+    background-color: aqua; /* Temporary */
+    display: flex;
+    z-index: 5;
+}
+#headerLeft{
+    flex: 1;
+}
+#smallLogo{
+    width: 80px;
+    height: 80px;
+    background-color: #36395A;
+}
+#headerRight{
+    position: relative;
+    flex: 3;
+    align-content: center;
+    float: right;
+    display:contents;
+}
+#headerRight input{
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    appearance: none;
+   -webkit-appearance: none;
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   font-size: 2rem;
+   padding: 0.1rem;
+   margin: 10px;
+   margin-right: 20px;
+   border: 0.25rem solid green;
+   border-radius: 0.5rem;
+   transition: ease-in-out, 0.1s;
+      
+}
+input[type="checkbox"]::before {
+    content: "";
+    width: 1.4rem;
+    height: 1.4rem;
+    transform: scale(0);
+    background-color: rgb(128, 73, 0);
+    transition: ease-in-out, 0.1s;
+}
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+#headerRight input:hover {
+    color: black;
+    width: 60px;
+    transition: ease-in-out, 0.1s;
+}
+
 /* Title */
 #titleBox {
     position: relative;
@@ -27,6 +86,7 @@ body{
     text-align: center;
     padding: 0px;
     margin: 0px;
+    padding-top: 75px;
     transition: background-image 0.4s ease-in-out;
 }
 
@@ -119,13 +179,13 @@ and (min-device-width : 900px) {
 #programming{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("images/programmingService.jpg");
     transition: background-image 0.1s;
-    transform: perspective(800px) rotateY(15deg);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 #robotics{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),url("images/roboticsService.jpg");
     transition: background-image 0.1s;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    transform: perspective(800px) rotateY(15deg);
 
 }
 #cadModeling{
@@ -135,7 +195,6 @@ and (min-device-width : 900px) {
 }
 #programming:hover, #robotics:hover, #cadModeling:hover{
     flex-grow: 2;
-    font-size: 1.3em;
     transition: all 0.7s;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -144,7 +203,7 @@ and (min-device-width : 900px) {
 }
 #programming, #robotics, #cadModeling{
     flex-grow: 1;
-    font-size: 1em;
+    font-size: 1.1em;
     transition: all 0.7s;
     opacity: 0.7;
 }
@@ -209,7 +268,7 @@ and (min-device-width : 900px) {
 #aboutMe{
     width: auto;
     height: 400px;
-    background-color:rgb(114, 32, 32); /* Temporary */
+    background-color:rgb(32, 17, 17); /* Temporary */
     padding: 100px;
     display: flex;
 }
@@ -217,17 +276,22 @@ and (min-device-width : 900px) {
 #aboutMeLeft{
     position: relative;
     height: auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-position: center; 
+
     flex: 1;
 }
 #aboutMePic{
     position: relative;
-    background-color:rgb(32, 114, 53); /* Temporary */
+    background-color:rgb(86, 98, 89); /* Temporary */
     width: 300px;
     height: 300px;
     text-align: center; /* Temporary */
     font-size: 3em; /* Temporary */
 }
-#aboutMeLeft button{
+#aboutMeRight button{
     align-items: center;
     appearance: none;
     background-color: #FCFCFD;
@@ -250,7 +314,7 @@ and (min-device-width : 900px) {
     will-change: box-shadow,transform;
     font-size: 18px;
 }
-#aboutMeLeft button:hover{
+#aboutMeRight button:hover{
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     transform: translateY(-4px);
 }
@@ -285,6 +349,7 @@ footer{
     height: auto;
     background-color:rgb(62, 40, 151); /* Temporary */
 }
+
 /* TopFooter */
 #topFooter{
     position: relative;
@@ -371,6 +436,7 @@ footer{
 }
 /* BottomFooter */
 #bottomFooter{
+    position: relative;
     text-align: center;
 }
 
